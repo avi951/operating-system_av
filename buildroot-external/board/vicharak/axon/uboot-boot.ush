@@ -1,0 +1,4 @@
+load mmc 1:3 0x00400000 Image
+load mmc 1:2 0x08300000 rk3588-axon-linux.dtb
+setenv bootargs "console=ttyS0,1500000 root=/dev/mmcblk1p3 rootwait"
+booti 0x00400000 - 0x08300000
